@@ -84,7 +84,7 @@ for shard in 0 1 2; do
 done
 ```
 
-**Step 2 — build the frozen diagnostic sampling manifest** (defines the `b1_pilot`, `b1_confirmatory`, and `b2_confirmatory` splits used by the paper):
+**Step 2 — build the frozen diagnostic sampling manifest** (defines the paper's evaluation splits: `b1_pilot` with 15 demos, `b1_confirmatory` with 100 demos, and `b2_confirmatory` with 30 demos):
 
 ```bash
 python tools/build_odeworld_diagnostic_sampling_manifest.py \
